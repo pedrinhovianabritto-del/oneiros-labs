@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Acesso Restrito</title>
+
+<style>
+
+body{
+
+background:black;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+font-family:Courier New;
+
+color:white;
+
+}
+
+div{
+
+text-align:center;
+
+}
+
+input{
+
+padding:12px;
+
+width:250px;
+
+background:#111;
+
+border:1px solid white;
+
+color:white;
+
+margin-top:15px;
+
+}
+
+button{
+
+margin-top:20px;
+
+padding:12px 30px;
+
+background:white;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+
+<h1>ONEIROS LABS</h1>
+
+<p>Sistema Interno</p>
+
+<input id="senha" placeholder="Digite a senha">
+
+<br>
+
+<button onclick="entrar()">
+Entrar
+</button>
+
+</div>
+
+<script>
+
+function entrar(){
+
+let senha=document.getElementById("senha").value;
+
+if(senha=="0317"){
+
+window.location="documentos.html";
+
+}
+
+else{
+
+alert("Acesso Negado.");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
